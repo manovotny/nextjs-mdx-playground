@@ -1,6 +1,7 @@
 {
   "name": "nextjs-mdx-playground",
-  "version": "0.1.0",
+  "description": "Experimenting with Next.js + MDX 🧑‍🔬",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "next build",

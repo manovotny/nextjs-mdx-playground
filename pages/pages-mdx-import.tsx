@@ -1,9 +1,13 @@
-import Welcome from "@/markdown/welcome.mdx";
-
-export const metadata = {
-  title: "Pages MDX Import",
-};
+import Head from "next/head";
+import MDXComponent from "@/components/mdx.mdx";
 
 export default function Page() {
-  return <Welcome />;
+  return (
+    <>
+      <Head>
+        <title>Pages MDX Import</title>
+      </Head>
+      <MDXComponent />
+    </>
+  );
 }

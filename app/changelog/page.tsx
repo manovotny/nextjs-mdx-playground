@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import fs from "fs";
 import path from "path";
 
-export function getChangelogs() {
+function getChangelogs() {
   const changelogsDir = path.join(process.cwd(), "changelogs");
   return fs
     .readdirSync(changelogsDir)

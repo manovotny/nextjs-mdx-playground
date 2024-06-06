@@ -22,6 +22,11 @@ export default function Home() {
       description: "TODO",
       href: "/pages-mdx-import",
     },
+    {
+      title: "Changelog",
+      description: "TODO",
+      href: "/changelog",
+    },
   ];
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">

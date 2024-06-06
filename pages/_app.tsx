@@ -1,11 +1,12 @@
+import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";
 import "../app/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={inter.variable}>
+    <main className={inter.className}>
       <Component {...pageProps} />
     </main>
   );

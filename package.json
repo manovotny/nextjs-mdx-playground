@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "npm run lint && tsc"
   },
   "dependencies": {
     "@mdx-js/loader": "3.0.1",

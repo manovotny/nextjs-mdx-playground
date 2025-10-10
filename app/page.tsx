@@ -13,6 +13,11 @@ export default function Home() {
       href: "/app-mdx-import",
     },
     {
+      title: "App Router MDX Partials",
+      description: "TODO",
+      href: "/app-mdx-partials",
+    },
+    {
       title: "Pages Router MDX Route",
       description: "TODO",
       href: "/pages-mdx-route",
@@ -30,14 +35,14 @@ export default function Home() {
   ];
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         {" "}
       </div>
-      <div className="relative flex place-items-center ">
+      <div className="relative flex place-items-center">
         <h1 className="text-4xl">Experimenting with Next.js + MDX 🧑‍🔬</h1>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         {cards.map(({ title, description, href }) => (
           <Link
             key={href}
@@ -46,7 +51,7 @@ export default function Home() {
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
               {title}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none ml-2">
+              <span className="ml-2 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
               </span>
             </h2>

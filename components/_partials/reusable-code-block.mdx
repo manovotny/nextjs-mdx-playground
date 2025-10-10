@@ -1,0 +1,15 @@
+```js
+import { checkBotId } from "botid/server";
+
+export async function POST(req: Request) {
+  const { isBot } = await checkBotId();
+
+  if (isBot) {
+    return new Response("Access Denied", { status: 403 });
+  }
+
+  const result = await expensiveOrCriticalOperation();
+
+  return new Response("Success!");
+}
+```

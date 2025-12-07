@@ -3,34 +3,34 @@ import Link from "next/link";
 export default function Home() {
   const cards = [
     {
-      title: "App + MDX Route",
       description: "TODO",
       href: "/app-mdx-route",
+      title: "App + MDX Route",
     },
     {
-      title: "App Router MDX Import",
       description: "TODO",
       href: "/app-mdx-import",
+      title: "App Router MDX Import",
     },
     {
-      title: "App Router MDX Partials",
       description: "TODO",
       href: "/app-mdx-partials",
+      title: "App Router MDX Partials",
     },
     {
-      title: "Pages Router MDX Route",
       description: "TODO",
       href: "/pages-mdx-route",
+      title: "Pages Router MDX Route",
     },
     {
-      title: "Pages Router MDX Import",
       description: "TODO",
       href: "/pages-mdx-import",
+      title: "Pages Router MDX Import",
     },
     {
-      title: "Changelog",
       description: "TODO",
       href: "/changelog",
+      title: "Changelog",
     },
   ];
   return (

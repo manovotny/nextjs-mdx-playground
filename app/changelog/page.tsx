@@ -1,6 +1,7 @@
-import dynamic from "next/dynamic";
 import fs from "fs";
 import path from "path";
+
+import dynamic from "next/dynamic";
 
 function getChangelogs() {
   const changelogsDir = path.join(process.cwd(), "changelogs");

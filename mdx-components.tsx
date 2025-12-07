@@ -1,5 +1,5 @@
-import type { MDXComponents } from "mdx/types";
 import { ComponentPropsWithoutRef } from "react";
+import type { MDXComponents } from "mdx/types";
 
 const components: MDXComponents = {
   code: ({ children, ...props }: ComponentPropsWithoutRef<"code">) => (

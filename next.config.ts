@@ -1,12 +1,8 @@
-import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  eslint: {
-    // Disabled on builds because we're running checks on PRs via GitHub Actions.
-    ignoreDuringBuilds: true,
-  },
-  pageExtensions: ["mdx", "tsx"],
+  pageExtensions: ["mdx", "ts", "tsx"],
 };
 
 const withMDX = createMDX({});
